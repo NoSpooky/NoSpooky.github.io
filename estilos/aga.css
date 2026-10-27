@@ -1,1 +1,28 @@
 
+body {
+    font-family: Arial, sans-serif;
+    color: #111111;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 40px;
+}
+
+h1, h2 {
+    color: #111111; /* Evitamos colores azules en encabezados por si acaso */
+}
+
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+ul {
+    margin-bottom: 20px;
+}
