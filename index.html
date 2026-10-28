@@ -1,13 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Pagina En github</title>
-    <link rel="stylesheet" href="./estilos/aga.css">
-</head>
-<body>
-    <h1 id="idk">Un titulo Hecho en GitHub</h1>
-   <pre id="par">omg</pre>
-</body>
+    <link rel="stylesheet" href="./css/io.css" />
+  </head>
+  <div class="sombraedgy">
+    <body>
+      <h1>Modificadores de Acceso y Encapsulamiento de Clases | C# 5.0</h1>
+      <h2>Encapsulamiento de Clases</h2>
+      <p>
+        El encapsulamiento es uno de los pilares fundamentales de la
+        programación orientada a objetos (POO). Consiste en agrupar en una misma
+        clase los datos (variables o atributos) y los métodos (funciones) que
+        operan sobre esos datos, restringiendo el acceso directo a algunos de
+        los componentes desde fuera de la clase. Esto protege la integridad del
+        objeto evitando que datos internos sean modificados de manera incorrecta
+        o no autorizada.
+      </p>
+
+      <h2>Modificadores de Acceso</h2>
+      <p>
+        Los modificadores de acceso en C# 5.0 especifican la visibilidad y
+        accesibilidad de los miembros dentro del programa. Los principales son:
+      </p>
+
+      <p>
+        <strong>public:</strong> El miembro es accesible desde cualquier otra
+        clase o código sin restricciones.
+      </p>
+      <pre><code>public class Persona
+{
+    // Accesible desde cualquier parte del programa
+    public string nombre; 
+}</code></pre>
+      <p>
+        <strong>private:</strong> El acceso está estrictamente limitado a la
+        misma clase donde se declaró. Es el más restrictivo para el
+        encapsulamiento.
+      </p>
+      <pre><code>public class CuentaBancaria
+    {
+    // Solo se puede modificar y leer desde dentro de esta misma clase
+    private double saldo; 
+}</code></pre>
+      <p>
+        <strong>protected:</strong> El miembro es accesible dentro de su propia
+        clase y por cualquier clase derivada (herencia).
+      </p>
+      <pre><code>public class Vehiculo
+{
+    // Accesible aquí y en clases hijas que hereden de Vehiculo
+    protected string numeroChasis; 
+}</code></pre>
+      <p>
+        <strong>internal:</strong> El acceso se limita exclusivamente al
+        ensamblado actual (al proyecto de C# actual), permitiendo que clases del
+        mismo proyecto accedan a él.
+      </p>
+      <pre><code>internal class ConfiguracionApp
+{
+    // Accesible solo dentro del mismo proyecto/ensamblado
+    internal string servidorConexion; 
+}</code></pre>
+    </body>
+  </div>
 </html>
