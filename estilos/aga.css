@@ -1,3 +1,9 @@
+.sombraedgy {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* acabo de descubrir esto , loquisimo */
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -7,15 +13,25 @@ body {
     margin: 40px;
 }
 
-h1, h2 {
-    color: #111111; /* Evitamos colores azules en encabezados por si acaso */
+h1{
+    color: #111111;
+    background-color: #438cdf;
+    border-radius: 5px;
+    padding: 10px;
+
 }
+h2{
+    color: #111111;
+    text-decoration: underline;
+    
+}   
+
 
 pre {
     background-color: #272822;
-    color: #f8f8f2;
+    color: #ffffff;
     padding: 15px;
-    border-radius: 5px;
+    border-radius:5px;
     overflow-x: auto;
 }
 
@@ -24,5 +40,10 @@ code {
 }
 
 ul {
-    margin-bottom: 20px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 8px;
 }
